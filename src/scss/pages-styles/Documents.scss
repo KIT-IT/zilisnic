@@ -1,0 +1,24 @@
+// Documents
+.documents {
+   &__body {
+      padding-bottom: 30px;
+      width: 100%;
+   @media (max-width: $md3+px) {
+      padding-bottom: 15px;
+   }
+   }  
+ }
+
+ .documents-header {
+   &__title {}
+   &__info-list {
+     &_text {
+       padding-bottom: 5px;
+       line-height: 1.5;
+     }
+     &_link {
+       color: #000;
+       font-weight: bold;
+     }
+   }
+ }

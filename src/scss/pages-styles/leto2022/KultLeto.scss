@@ -1,0 +1,256 @@
+//KultLeto.scss
+.kult {
+  &__body {
+    margin-top: 200px;
+    @media (max-width: $md2 + px) {
+      margin-top: 100px;
+    }  
+  }
+}
+
+.kult-info {
+  &__title {
+    &_text {
+      font-size: 50px;
+      font-family: 'Patetica';
+    }
+  }
+  &__subscribe {
+    margin-top: 30px;
+    width: 60%;
+    @media (max-width: 620px) {
+      width: 100%;
+    }  
+    &_text {
+      font-size: 20px;
+    }
+  }
+}
+
+.kult-program {
+  margin-top: 50px;
+  &__title {
+    &_text {
+      font-family: 'Patetica';
+    }
+  }
+  &__programs {
+    margin-top: 30px;
+    &_list {
+      @media (max-width: 1020px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -20px;
+      }
+    }
+  }
+}
+
+.kult-item {
+  margin: 50px 0;
+  @media (max-width: 1020px) {
+    width: 50%;
+    margin: 30px 0;
+    padding: 0 20px;
+  }
+  @media (max-width: 750px) {
+    width: 100%;
+  }
+  &__body {
+    display: flex;
+    @media (max-width: 1020px) {
+      display: block;
+    }
+  }
+  &__info {
+    width: 60%;
+    margin-left: 30px;
+    position: relative;
+    font-size: 25px;
+    font-family: 'FuturaPT';
+    font-weight: 300;
+    @media (max-width: 1020px) {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+  &__img {
+    position: relative;
+    height: 350px;
+    @media (max-width: 750px) {
+      height: 450px;
+    }
+    &_image {
+      width: 500px;
+      height: 350px;
+      object-fit: cover;
+      object-position: center;
+      @media (max-width: 1020px) {
+        width: 100%;
+      }
+      @media (max-width: 750px) {
+        height: 450px;
+      }
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 25%;
+      background: rgba(255, 153, 2, .9);
+      opacity: 1;
+      transition: width .6s, background 1s;
+      @media (max-width: 1020px) {
+        width: 20%;
+      }
+    }
+    &:hover:before {
+      width: 100%;
+      background: rgba(255, 153, 2, 1);
+    }
+    &_content {
+      position: absolute;
+      top: 0;
+      left: 10.5%;
+      z-index: 100;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 100%;
+      @media (max-width: 1020px) {
+        left: 8%;
+      }
+      @media (max-width: 480px) {
+        left: 6%;
+      }
+    }
+  }
+  
+
+  &__name {
+    font-family: 'Patetica';
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+
+  &__date {
+    font-family: 'Patetica';
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  &__sub {
+    font-size: 20px;
+    color: #3b3b3b;
+    margin-top: 20px;
+  }
+
+  &__location {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 22px;
+    margin-top: 40px;
+    @media (max-width: 1020px) {
+      position: static;
+      margin-top: 10px;
+    }
+  }
+}
+
+.kult-item-content {
+  display: flex;
+  align-items: center;
+  &__icon {
+    min-width: 24px;
+    min-height: 24px;
+  }
+  &__info {
+    padding-left: 30px;
+    color: #3b3b3b;
+    font-size: 20px;
+    @media (max-width: 900px) {
+      padding-left: 10px;
+    }
+    @media (max-width: 480px) {
+      font-family: 'FuturaPT';
+      font-size: 18px;
+    }
+  }
+}
+
+/// kult-signUp
+.kult-signUp {
+  background: #f6f6f6;
+  @media (max-width: 1000px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__body {
+    display: flex;
+    align-items: center;
+    @media (max-width: 450px) {
+      flex-direction: column;
+    }
+  }
+  &__title {
+    padding: 50px 50px 50px 0;
+    @media (max-width: 450px) {
+      padding: 50px 0 30px 0;
+    }
+    &_text {
+      font-family: 'Patetica';
+      font-size: 30px;
+    }
+  }
+}
+
+.kult-signUp-button {
+  @media (max-width: 450px) {
+    padding-bottom: 50px;
+  }
+  &__body {
+    border: 2px solid #000; 
+    &_link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #000;
+      width: 100%;
+      height: 100%;
+    }
+    &_text {}
+  }
+}
+
+
+
+
+///Animation
+.kult-anim-enter {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+.kult-anim-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 1.3s, transform 500ms;
+}
+
+.kult-anim-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.kult-anim-exit-active {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 200ms, transform 200ms;
+}

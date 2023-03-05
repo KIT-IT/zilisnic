@@ -1,0 +1,112 @@
+//<МИКСИНЫ>=======================================================================================
+
+//<ШРИФТЫ>========================================================================================
+
+//<Подключаем шрифты>=============================================================================
+//&display=swap&subset=cyrillic-ext
+@import "fonts";
+
+//<Иконочные шрифты>==============================================================================
+//@import "icons";
+//</Иконочные шрифты>=============================================================================
+
+//<Шрифт по умолчанию>============================================================================
+$fontFamily: 'FuturaPT-book';
+
+//<ПЕРЕМЕННЫЕ>====================================================================================
+$minWidth: 320px;
+$maxWidth: 1920;
+$maxWidthContainer: 1200;
+$md1: $maxWidthContainer + 12;
+$md2: 899.98;
+$md3: 767.98;
+$md4: 479.98;
+
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>====================================================================
+@import "null";
+body {
+  color: rgb(22, 22, 39);;
+  font-family: $fontFamily;
+  font-size: 18px;
+  &._lock {
+    overflow: hidden;
+  }
+}
+
+//<ОБОЛОЧКА>======================================================================================
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+._content {
+  padding: 50px 0;
+}
+
+._block {
+  padding: 60px 0;
+  @media (max-width: $md3 + 'px') {
+    padding: 30px 0;
+  }
+}
+//<ОСНОВНАЯ СЕТКА>================================================================================
+._container {
+  max-width: $maxWidthContainer + px;
+  margin: 0 auto;
+  padding: 0 15px;
+  @media (max-width: $md1+px) {
+    max-width: 1020px;
+  }
+  @media (max-width: $md2+px) {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  @media (max-width: $md3+px) {
+    max-width: none;
+    padding: 0 20px;
+  }
+}
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ ГОТОВЫХ КЛАССОВ>============================================================
+@import "ui";
+
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ КОМПОНЕНТОВ>========================================================
+@import "components-styles/Accordion";
+@import "components-styles/HeaderMediaSection";
+@import "components-styles/LinksSection";
+@import "components-styles/VisualImpairedSection";
+@import "components-styles/Header";
+@import "components-styles/Footer";
+@import "components-styles/Form";
+@import "components-styles/Navigation";
+@import "components-styles/PagePreview";
+@import "components-styles/PlusToMinus";
+@import "components-styles/Pagination";
+@import "components-styles/Carousel";
+@import "components-styles/VidioBanner.scss";
+
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ>=============================================================
+@import "pages-styles/Contacts";
+@import "pages-styles/Documents";
+@import "pages-styles/Personal";
+@import "pages-styles/Questions";
+@import "pages-styles/About";
+@import "pages-styles/Contacts";
+@import "pages-styles/ClubsList";
+@import "pages-styles/Clubs";
+@import "pages-styles/Events";
+@import "pages-styles/Festivals";
+@import "pages-styles/LibrariesItem";
+@import "pages-styles/Libraries";
+@import "pages-styles/Main";
+@import "pages-styles/10yearsTiNAO.scss";
+@import "pages-styles/SearchingResult";
+@import "pages-styles/NoMatch";
+@import "pages-styles/leto2022/KultLeto.scss";
+@import "pages-styles/leto2022/Ltl.scss";
+@import "pages-styles/leto2022/MainLeto.scss";
+

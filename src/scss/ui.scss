@@ -1,0 +1,68 @@
+//</ГОТОВЫЕ КЛАССЫ>====================================================================================================
+._title {
+  font-family: 'FuturaPT';
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 1.3;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+._subtitle {
+  font-family: 'FuturaPT';
+  font-weight: 500;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+._heading {
+  font-family: 'FuturaPT-book';
+  font-weight: bold;
+  font-size: 30px;
+  padding-bottom: 10px;
+  color: rgb(22, 22, 39);
+}
+
+.header-icon {
+  font-size: 15px;
+}
+
+.footer-icon {
+  font-size: 25px;
+}
+
+.button {
+  width: 130px;
+  height: 40px;
+  border-radius: 20px;
+  background: inherit;
+  &:hover {
+    border-radius: 25px;
+    border-color: #ff9902;
+    background: #ff9902;
+    transition: .2s ease-in;
+    box-shadow: 1px 1px 1px #000;
+  }
+}
+
+.input {
+  background: none;
+  width: 100%;
+  height: 40px;
+  padding-top: 15px;
+  &:focus {
+    border-bottom: 2px solid #ff9902;
+    transition: .3s ease-out;
+  }
+}
+
+.textarea {
+    background: none;
+    width: 100%;
+    padding-top: 10px;
+    border-bottom: 2px solid #000;
+    &:focus {
+      border-bottom: 2px solid #ff9902;
+      transition: .3s ease-out;
+    }
+}

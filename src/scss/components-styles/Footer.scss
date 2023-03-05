@@ -1,0 +1,116 @@
+.footer {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  background: #161627;
+  &__body {}
+  &__content {}
+}
+
+.footer-nav {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  @media (max-width: $md3+px) {
+    flex-wrap: wrap;
+  }
+  &__list {
+    flex: 33.333%;
+    margin: 20px 20px 2px 0px;
+    @media (max-width: $md2+px) {
+      max-width: 300px;
+    }
+    @media (max-width: 500px) {
+      flex: 100%;
+    }
+  }
+  &__item {
+      padding: 5px 0;
+      align-self: center;
+      &_link {
+        font-family: 'FuturaPT';
+        font-weight: 300;
+        color: rgba(255,255,255,.5);
+        &:hover {
+          color: #fff;
+          border-bottom: 1px solid #fff;
+        }
+      }
+    }
+  &__item p {
+    &:hover {
+      color: rgba(255,255,255,.5);
+      border-bottom: none;
+    }
+  }
+  &__item-title {
+    font-family: 'FuturaPT';
+    font-weight: 700;
+    margin-bottom: 10px;
+    &_text {
+      color: #fff;
+      &:hover {
+        border-bottom: 1px solid #fff;
+      }
+    }
+  }
+  }
+
+
+.footer-info-phones {}
+
+.footer-info-item {
+  display: flex;
+  padding: 5px 0;
+  &__img {}
+  &__link {
+    color: #3b3b3b;
+  }
+  &__org {}
+}
+
+.footer-links {
+  flex: 33.333%;
+}
+
+
+.footer-link-section {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  @media (max-width: 700px) {
+    display: block;
+    padding: 0 20px;
+  }
+  @media (max-width: $md3+px) {
+    flex-wrap: wrap;
+  }
+}
+
+.footer-logo-section {
+  cursor: pointer;
+  flex: 33.333%;
+  display: flex;
+  justify-content: center;
+  @media (max-width: 700px) {
+    margin-top: 30px;
+  }
+  &__image {
+    height: 70px;
+  }
+}
+
+.footer-copyright-section {
+  flex: 33.333%;
+  display: flex;
+  justify-content: center;
+  @media (max-width: 700px) {
+  margin-top: 30px;
+  }
+  &__text {
+    font-weight: lighter;
+    color: #fff;
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,130 @@
+.festivals {
+  &__body {
+    &_title {}
+  }
+}
+
+.festivals-content {
+  &__list {}
+}
+
+.festivals-list {
+  &__item {}
+}
+
+.festivals-preview {
+  height: 100vh;
+  max-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  @media (max-width: 1000px) {
+    background-attachment: scroll;
+  }
+}
+
+.festivals-preview-body {
+  height: 100%;
+  &__info {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    &_text {
+      color: #fff;
+      font-size: 40px;
+      text-shadow: 1px 1px 1px #000;
+    }
+  }
+}
+
+
+.festivals-description {
+  &__heading {
+    background: #6fa89b;
+    color: #fff;
+    &_body  {}
+  }
+  &__main {}
+  &__info {
+    &_text {}
+  }
+}
+
+.festivals-description-main {
+  &__body {
+    @media (max-width: $md1 + 'px') {
+      margin: 0 30px;
+    }
+    @media (max-width: $md2 + 'px') {
+      margin: 0;
+    }
+  }
+  &__title {}
+  &__name {}
+  &__info {
+    &_text {}
+  }
+  &__link {
+    margin-top: 20px;
+    border: 2px solid #000;
+    &_text {
+      font-size: 16px;
+    }
+    &_document {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #000;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.festivals-description-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 500px;
+  @media (max-width: $md3 + 'px') {
+    width: auto;
+  }
+  &__item {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    @media (max-width: $md2 + 'px') {
+      border: none;
+      flex: 25%;
+      height: auto;
+      justify-content: space-between;
+      padding: 0 30px;
+    }
+    @media (max-width: 500px) {
+      padding: 0;
+    }
+    &_icon {
+      font-size: 30px;
+      @media (max-width: 630px) {
+        font-size: 20px;
+      }
+    }
+    &_text {
+      margin-top: 10px;
+      @media (max-width: $md2 + 'px') {
+        margin-top: 10px;
+      }
+      @media (max-width: 630px) {
+        font-size: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.pagination {
+  background: #6fa89b;
+  &__body {}
+}
+
+.pagination-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__item {
+    position: relative;
+    margin: 0 10px;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    &:hover {
+      border-bottom: 3px solid #fff;
+    }
+    &_number {
+      position: absolute;
+      top: 15%;
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+  }
+}
+
+.pagination-item-active {
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  transition: .2s ease;
+  cursor: auto;
+}
