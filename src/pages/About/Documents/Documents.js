@@ -8,7 +8,7 @@ function Documents() {
          <div className="documents wrapper">
             <PagePreview
                 title={"Правовая Информация"}
-                backgroundImage={require("../../../assets/images/backgroundImages/documentsBackground.jpg")}
+                backgroundImage={require("../../../assets/images/backgroundImages/cropped-view-of-businesswomen-reading-documensmall.jpg")}
                 isNested={true}
                 secondPageName={"Документы"}
             />

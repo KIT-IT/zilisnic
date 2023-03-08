@@ -8,77 +8,47 @@ import { faShare  } from  '@fortawesome/free-solid-svg-icons'
 import PagePreview from "../../components/PagePrewievImageNavigation/PagePreview";
 
 function Libraries() {
-    const list = libraryData.map(lib => {
-        return (
-            <li className="lib-list__item lib-item element-with-changing-styles" key={lib.id}>
-                <Link to={lib.to} >
-                    <div className="lib-item__body">
-                        <div className="lib-item__head">
-                            <img className="lib-item__head_img" src={lib.img} alt={lib.name}/>
-                            <div className="image-overlay">
-                                <p className="image-overlay__text">Подробнее</p>
-                            </div>
-                        </div>
-                        <p className="lib-item__head_text">{lib.name}</p>
-                    </div>
-                </Link>  
-            </li>
-        )
-    })
-
     return (
-            <div className="lib wrapper">
-                <div className="lib__body">
-                    <PagePreview
-                        title={"Наши Библиотеки"}
-                        backgroundImage={require("../../assets/images/backgroundImages/librariesBackground.jpg")}
-                        isNested={true}
-                        secondPageName={"Библиотеки"}
-                    />
-                    <div className="lib-cards">
-                        <div className="lib-cards__body _container">
-                            <ul className="lib-list">
-                                {list}
-                            </ul>
-                        </div>
+    <div className="lib wrapper">
+        <div className="lib__body">
+            <PagePreview
+                title={"Обслуживаемые объекты"}
+                backgroundImage={require("../../assets/images/backgroundImages/objects.jpg")}
+                isNested={true}
+                secondPageName={"Обслуживаемые объекты"}
+            />
+        <div className="about-content">
+            <div className="about-content__body _container">
+                <div className="about-main _block">
+                    <div className="about-main__title">
+                        <span className="about-main__title_text _subtitle">Под управлением МБУ «ЖИЛИЩНИК МОСРЕНТГЕН»<br /> </span>
+                        <span className="about-main__title_text _subtitle">находятся 14 многоквартирных домов расположенные по адресам: </span>
                     </div>
-                    <div className="lib-services _content element-with-changing-styles">
-                        <div className="lib-services-title _container">
-                            <h1 className="_subtitle">Услуги</h1>
-                        </div>
-                        <div className="lib-services-subtitle _container">
-                            <h2 className="lib-services-subtitle_text _heading element-with-changing-styles">Предоставление бесплатных услуг</h2>
-                        </div>
-                        <div className="lib-services-list-body _container">
-                            <ul className="lib-services-list ">
-                                <li className="lib-services-list__item"><FontAwesomeIcon className="lib-services-list__item_icon element-with-changing-styles" icon={faShare}/><p className="lib-services-list__item_text">Регистрация пользователей библиотеки</p></li>
-                                <li className="lib-services-list__item"><FontAwesomeIcon className="lib-services-list__item_icon element-with-changing-styles" icon={faShare}/><p className="lib-services-list__item_text">Выдача для временного пользования документов из имеющегося библиотечного фонда</p></li>
-                                <li className="lib-services-list__item"><FontAwesomeIcon className="lib-services-list__item_icon element-with-changing-styles" icon={faShare}/><p className="lib-services-list__item_text">Поиск информации в справочно-поисковом аппарате</p></li>
-                                <li className="lib-services-list__item"><FontAwesomeIcon className="lib-services-list__item_icon element-with-changing-styles" icon={faShare}/><p className="lib-services-list__item_text">Оперативные справочно-библиографические услуги ( за исключением составления тематических списков литературы, предоставления письменных справок справочно-библиографического содержания)</p></li>
-                                <li className="lib-services-list__item"><FontAwesomeIcon className="lib-services-list__item_icon element-with-changing-styles" icon={faShare}/><p className="lib-services-list__item_text">Информация о библиотеках и центрах научной информации города Москвы с помощью сети Интернет</p></li>
-                                <li className="lib-services-list__item"><FontAwesomeIcon className="lib-services-list__item_icon element-with-changing-styles" icon={faShare}/><p className="lib-services-list__item_text">Доступ к книжным выставкам из фондов библиотеки</p></li>
-                                <li className="lib-services-list__item"><FontAwesomeIcon className="lib-services-list__item_icon element-with-changing-styles" icon={faShare}/><p className="lib-services-list__item_text">Предварительный заказ документов, бронирование и продление срока бронирования в читательном зале</p></li>
-                                <li className="lib-services-list__item"><FontAwesomeIcon className="lib-services-list__item_icon element-with-changing-styles" icon={faShare}/><p className="lib-services-list__item_text">Экскурсионные услуги</p></li>
-                                <li className="lib-services-list__item"><FontAwesomeIcon className="lib-services-list__item_icon element-with-changing-styles" icon={faShare}/><p className="lib-services-list__item_text">Ксерокопирование</p></li>
-                                <li className="lib-services-list__item"><FontAwesomeIcon className="lib-services-list__item_icon element-with-changing-styles" icon={faShare}/><p className="lib-services-list__item_text">Печать на принтере</p></li>
-                                <li className="lib-services-list__item"><FontAwesomeIcon className="lib-services-list__item_icon element-with-changing-styles" icon={faShare}/><p className="lib-services-list__item_text">Сканирование</p></li>
-                                <li className="lib-services-list__item"><FontAwesomeIcon className="lib-services-list__item_icon element-with-changing-styles" icon={faShare}/><p className="lib-services-list__item_text">Выполнение тематической справки по ресурсам Интернет</p></li>
-                                <li className="lib-services-list__item"><FontAwesomeIcon className="lib-services-list__item_icon element-with-changing-styles" icon={faShare}/><p className="lib-services-list__item_text">Индивидуальная консультация по поиску в Интернет</p></li>
-                                <li className="lib-services-list__item"><FontAwesomeIcon className="lib-services-list__item_icon element-with-changing-styles" icon={faShare}/><p className="lib-services-list__item_text">Проведение культурно-массовых мероприятий с привлечением сторонних организаций</p></li>
-                                <li className="lib-services-list__item"><FontAwesomeIcon className="lib-services-list__item_icon element-with-changing-styles" icon={faShare}/><p className="lib-services-list__item_text">Предоставление рабочих мест, оборудованных компьютерами для пользователей библиотеки</p></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="lib-rules _container">
-                        <div className="lib-rules__body  _content">
-                            <div className="lib-rules__title">
-                                <h1 className="_subtitle">Правила Посещения</h1>
-                            </div>
-                            <Accordion accordionConfig={libRulesData} isDocs={false} isList={true}/>
+                    <div className="about-main-content-obj">
+                        <div className="about-main-content-obj__info">
+                            <table className="about-main-content-obj__info-table">
+                                <tr><td>1</td><td>г. Москва, п. «Мосрентген», пос. завода Мосрентген, д. 6</td></tr>
+                                <tr><td>2</td><td>г. Москва, п. «Мосрентген», пос. завода Мосрентген, д. 7</td></tr>
+                                <tr><td>3</td><td>г. Москва, п. «Мосрентген», пос. завода Мосрентген, д. 13</td></tr>
+                                <tr><td>4</td><td>г. Москва, п. «Мосрентген», пос. завода Мосрентген, д. 14</td></tr>
+                                <tr><td>5</td><td>г. Москва, п. «Мосрентген», пос. завода Мосрентген, д. 16</td></tr>
+                                <tr><td>6</td><td>г. Москва, п. «Мосрентген», пос. завода Мосрентген, д. 23</td></tr>
+                                <tr><td>7</td><td>г. Москва, п. «Мосрентген», пос. завода Мосрентген, д. 27</td></tr>
+                                <tr><td>8</td><td>г. Москва, п. «Мосрентген», пос. завода Мосрентген, д. 28</td></tr>
+                                <tr><td>9</td><td>г. Москва, п. «Мосрентген», пос. завода Мосрентген, д. 30</td></tr>
+                                <tr><td>10</td><td>г. Москва, п. «Мосрентген», пос. завода Мосрентген, д. 31</td></tr>
+                                <tr><td>11</td><td>г. Москва, п. «Мосрентген», пос. завода Мосрентген, д. 32</td></tr>
+                                <tr><td>12</td><td>г. Москва, п. «Мосрентген», пос. завода Мосрентген, Музыкальный пр-д, д. 1</td></tr>
+                                <tr><td>13</td><td>г. Москва, п. «Мосрентген», пос. завода Мосрентген, Музыкальный пр-д, д. 2</td></tr>
+                                <tr><td>14</td><td>г. Москва, п. «Мосрентген», пос. завода Мосрентген, Музыкальный пр-д, д. 3</td></tr>
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    </div>
     )
 }
 

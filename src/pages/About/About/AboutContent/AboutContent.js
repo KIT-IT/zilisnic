@@ -1,6 +1,10 @@
 import React from 'react'
 
 function AboutContent() {
+    const defaultState = {
+        center: [55.620750, 37.472685],
+        zoom: 16,
+      };
 
     return (
         <div className="about-content">
@@ -47,6 +51,9 @@ function AboutContent() {
                             </table>
                         </div>
                     </div>
+                </div>
+                <div>
+
                 </div>
             </div>
         </div>

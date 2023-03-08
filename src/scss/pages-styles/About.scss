@@ -108,7 +108,9 @@
       td {
         padding: 10px 20px;
         border: solid 1px rgb(161, 161, 161) ; 
-
+      }
+      td:nth-of-type(1) {
+        width: 30%;
       }
     }
   }
@@ -136,7 +138,24 @@
   }
 }
 
-
+.about-main-content-obj {
+  width: 100%;
+  margin-top: 30px;
+  &__info {
+    padding-right: 20px;
+    @media (max-width: 900px) {
+      flex: 100%;
+      padding-right: 0;
+    }
+    table {
+      border-collapse: collapse;
+      td {
+        padding: 10px 20px;
+        border: solid 1px rgb(161, 161, 161) ; 
+      }
+    }
+  }
+}
 
 ////  About-Unification
 .about-unification-content {

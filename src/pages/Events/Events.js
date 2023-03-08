@@ -40,10 +40,10 @@ function Events({month}) {
     return (
         <div className="events wrapper">
             <PagePreview
-                title={"События"}
-                backgroundImage={require("../../assets/images/backgroundImages/eventsBackground.jpg")}
+                title={"Новости"}
+                backgroundImage={require("../../assets/images/backgroundImages/man-reading-newspaper.jpg")}
                 isNested={true}
-                secondPageName={"События"}
+                secondPageName={"Новости"}
             />
             <div className="events__body _container">
                 <div className="events-content">

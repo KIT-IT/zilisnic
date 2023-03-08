@@ -1,49 +1,110 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChild, faLevelUpAlt, faSortAmountDownAlt } from '@fortawesome/free-solid-svg-icons'
+import img1 from '../../../assets/images/clubsGenres/chetra.jpg'
+import img2 from '../../../assets/images/clubsGenres/belarus.jpg'
+import img3 from '../../../assets/images/clubsGenres/gazel.jpg'
+import img4 from '../../../assets/images/aboutPageImages/4.JPG'
+import img5 from '../../../assets/images/aboutPageImages/5.JPG'
+import img6 from '../../../assets/images/aboutPageImages/6.JPG'
+import img7 from '../../../assets/images/aboutPageImages/7.JPG'
+import img8 from '../../../assets/images/aboutPageImages/8.JPG'
+import img9 from '../../../assets/images/aboutPageImages/9.JPG'
+import img10 from '../../../assets/images/aboutPageImages/10.JPG'
 
-function GenreItem({title, to, src, clubsCount, age, gender, level}) {
+function GenreItem() {
     return (
-        <li className="genre-list__item genre-item element-with-changing-styles">
-            <Link to={to} >
-                <div className="genre-item__body">
-                    <div className="genre-item__head">
-                        <img className="genre-item__head_img" src={src} alt="clubs"/>
-                        <div className="genre-image-overlay">
-                            <p className="genre-image-overlay__text">Подробнее</p>
-                        </div>
+        <div className="about-content">
+        <div className="about-content__body _container">
+            <div className="about-main _block">
+                <div className="about-main__title">
+                    <span className="about-main__title_text _subtitle">Общая информация: </span>
+                </div>
+                <div className="about-main-content">
+                    <div className="about-main-content__info">
+                        <p className="about-main-content__info_text">Наименование: ЧЕТРА МКСМ</p>
+                        <p className="about-main-content__info_text">Предназначение: Мини-погрузчики ЧЕТРА МКСМ — многофункциональная и компактная спецтехника с бортовым поворотом, которая идеально подходит для работ по обслуживанию дорог, уборке тротуаров, аллей и пешеходных дорожек, а также обустройству ландшафтов. Погрузчики являются незаменимыми помощниками при строительных работах и в сельском хозяйстве.</p>
                     </div>
-                    <div className="genre-item__info">
-                        <p className="genre-item__info_title">{title}</p>
-                        <div className="genre-item__info_content">
-                            <div className="genre-item-content-block">
-                                <p className="genre-item-content-block__clubs-count">Колличество Студий: {clubsCount}</p>
-                            </div>
-                            <div className="genre-item-content-block">
-                                <div className="genre-item-content-block__icon">
-                                    <FontAwesomeIcon icon={faSortAmountDownAlt} className="genre-item-content-block__icon_ico element-with-changing-styles"/>
-                                </div>
-                                <p className="genre-item-content-block__age">{age}</p>
-                            </div>
-                            <div className="genre-item-content-block">
-                                <div className="genre-item-content-block__icon">
-                                    <FontAwesomeIcon icon={faChild} className="genre-item-content-block__icon_ico element-with-changing-styles"/>
-                                </div>
-                                <p className="genre-item-content-block__gender">{gender}</p>
-                            </div>
-                            <div className="genre-item-content-block">
-                                <div className="genre-item-content-block__icon">
-                                    <FontAwesomeIcon icon={faLevelUpAlt} className="genre-item-content-block__icon_ico element-with-changing-styles"/>
-                                </div>
-                                <p className="genre-item-content-block__level">{level}</p>
-                            </div>
-                        </div>
+                    <div className="about-main-content__image">
+                        <img className="about-main-content__image_img" src={img1} alt=""/>
                     </div>
                 </div>
-            </Link>
-        </li>
-    )
+                <div className="about-main-content">
+                    <div className="about-main-content__info">
+                        <p className="about-main-content__info_text">Наименование: Беларус 82.1</p>
+                        <p className="about-main-content__info_text">Предназначение: Трактор предназначен для выполнения различных сельскохозяйственных работ с навесными, полунавесными и прицепными машинами и орудиями, транспортных работ.</p>
+                    </div>
+                    <div className="about-main-content__image">
+                        <img className="about-main-content__image_img" src={img2} alt=""/>
+                    </div>
+                </div>
+                <div className="about-main-content">
+                    <div className="about-main-content__info">
+                        <p className="about-main-content__info_text">Наименование: Фургон Газель Некст</p>
+                        <p className="about-main-content__info_text">Предназначение: Фургон предназначен для перевозки грузов, иногда с возможностью перевозки пассажиров до 3 человек. Грузовое пространство фургонов отделено от пассажирского перегородкой. Отличается высотой кузова и отсутствием обивки в задней его части.</p>
+                     </div>
+                    <div className="about-main-content__image">
+                        <img className="about-main-content__image_img" src={img3} alt=""/>
+                    </div>
+                </div>
+                <div className="about-main-content">
+                    <div className="about-main-content__info">
+                        <p className="about-main-content__info_text">При Петре I Автоном возглавлял сразу три приказа (министерства) – Иноземский, Рейтарский (кавалерийский) и Пушкарский. Полностью на свои средства Автоном Иванов в 1705-06 годах создал в Москве из служивых людей и рекрутов драгунский полк, впоследствии переименованный в Азовский. Полк отличился в битве под Полтавой и в Прутском походе. Большие изменения привносит Иванов и в жизнь своей подмосковной вотчины. На пустоши Беляевской, лежавшей по обеим сторонам Большой Калужской дороги, он поселяет крестьян и ставит дворы для постоя проезжих людей. Так возникает деревня, вскоре получившая название Теплый Стан. В Говорове Автоном Иванов строит каменную церковь, освященную во имя Живоначальной Троицы. По храму Говорово переименовывают в Троицкое.</p>
+                    </div>
+                    <div className="about-main-content__image">
+                        <img className="about-main-content__image_img" src={img4} alt=""/>
+                    </div>
+                </div>
+                <div className="about-main-content">
+                    <div className="about-main-content__info">
+                        <p className="about-main-content__info_text">После смерти Автонома село Троицкое вместе с близлежащими деревнями Теплый Стан, Беляево-Кузнецово, Татариново, Прокшино, Никольское и Летово, достается его сыну Николаю, а после него – вдове Николая Ивановича и трем его дочерям. Троицкое с Теплым Станом отходят к Дарье Николаевне, по мужу Салтыковой, – печально знаменитой Салтычихе. Прославившаяся своим изуверством, эта женщина в короткий срок – с 1755 по 1762 гг. – погубила более 130 крестьян. Следствие по ее делу длилось шесть лет и закончилось в 1768 году вынесением смертного приговора, который императрица Екатерина II заменила пожизненным одиночным заточением в монастыре.</p>
+                    </div>
+                    <div className="about-main-content__image">
+                        <img className="about-main-content__image_img" src={img5} alt=""/>
+                    </div>
+                </div>
+                <div className="about-main-content">
+                    <div className="about-main-content__info">
+                        <p className="about-main-content__info_text">Опекунами малолетних детей Салтычихи были назначены Ярославский генерал-губернатор Алексей Петрович Мельгунов и действительный статский советник Иван Никифорович Тютчев, муж старшей салтычихиной сестры Аграфены Николаевны. Ивана Никифоровича некоторые авторы ошибочно называют следующим собственником Троицкого – якобы он выставил усадьбу на продажу и сам же ее выкупил. На самом же деле, за долги перед казной опекуны в январе 1778 года продали Троицкое и Теплый Стан Борису Михайловичу Салтыкову, родственнику салтычихиных детей по отцу.</p>
+                    </div>
+                    <div className="about-main-content__image">
+                        <img className="about-main-content__image_img" src={img6} alt=""/>
+                    </div>
+                </div>
+                <div className="about-main-content">
+                    <div className="about-main-content__info">
+                        <p className="about-main-content__info_text">После Б.М.Салтыкова собственником Троицкого стал Н.А.Тютчев, дед великого поэта. По словам первого тютчевского биографа Ивана Аксакова, Николай Андреевич отличался «неистовым нравом», но при этом он, несомненно, был и довольно рачительным хозяином. Будучи в юности человеком среднего достатка, Н.И. Тютчев сумел увеличить свое состояние более, чем в 15 раз – с 180 крепостных душ до 2717. Есть все основания полагать, что именно ему Троицкое обязано великолепным регулярным парком с каскадом прудов. Аналогичный парк с прудами он устроил и в Овстуге Орловской губернии (ныне Брянская область), где провел большую часть своей жизни.</p>
+                    </div>
+                    <div className="about-main-content__image">
+                        <img className="about-main-content__image_img" src={img7} alt=""/>
+                    </div>
+                </div>
+                <div className="about-main-content">
+                    <div className="about-main-content__info">
+                        <p className="about-main-content__info_text">У Николая Андреевича была большая семья; нам известны четверо его сыновей и три дочери. Младшая дочь Надежда на склоне лет была ближайшим другом Гоголя. А старший сын Иван, родившийся в 1768 году, стал отцом одного из величайших творцов мировой поэзии. Хотя поэт родился не в Подмосковье, а в Овстуге, формирование его личности и поэтического гения связаны с Москвой и усадьбой Троицкое. О том времени писал в своей автобиографии наставник поэта С.Е.Раич, сам поэт и переводчик: «…с каким удовольствием вспоминаю я о тех сладостных часах, когда, бывало, весной и летом, живя в Подмосковной*, мы вдвоем с Федором Ивановичем выходили из дому, запасаясь Горацием, Вергилием или кем-нибудь из отечественных писателей, и, усевшись в роще, на холмике, углублялись в чтение и утопали в чистых наслаждениях красотами гениальных произведений поэзии». А университетский приятель поэта, историк М. П. Погодин, посвятил воспоминаниям о встречах с молодым Тютчевым в Троицком замечательные страницы своего дневника: «Мне представился он в воображении, как в первый раз пришел я к нему, университетскому товарищу, на свидание во время вакации**, пешком из села Знаменского под Москвою, на Серпуховской дороге – в Троицкое, на Калужской, где жил он в своем семействе… Молоденький мальчик с румянцем во всю щеку, в зелененьком сюртучке, лежит он, облокотясь на диване, и читает книгу. Что это у вас? Виландов «Агатодемон». В Троицком Тютчев проводил весну и лето в течение девяти лет – вплоть до своего отъезда на дипломатическую службу за границу в 1821 году. Одной из владелиц усадьбы впоследствии была племянница Грибоедова – Анастасия Устинова (в девичестве Римская-Корсакова).</p>
+                    </div>
+                    <div className="about-main-content__image">
+                        <img className="about-main-content__image_img" src={img8} alt=""/>
+                    </div>
+                </div>
+                <div className="about-main-content">
+                    <div className="about-main-content__info">
+                        <p className="about-main-content__info_text">В этот период усадьбу посещал известный композитор Алябьев. Практически на протяжении всей своей истории судьба усадьбы Троицкое была тесно связана с деревнями Верхний и Нижний Теплый стан. Неудивительно, что после революции 1917 года Троицкое меняет свое название на – подсобное хозяйство «Теплый стан». Здесь располагаются мастерские, на базе которых возникает завод рентгеновской техники. Во время Великой Отечественной войны его оборудование эвакуируют в Актюбинск, а сам завод начинает выпускать боеприпасы.</p>
+                    </div>
+                    <div className="about-main-content__image">
+                        <img className="about-main-content__image_img" src={img9} alt=""/>
+                    </div>
+                </div>
+                <div className="about-main-content">
+                    <div className="about-main-content__info">
+                        <p className="about-main-content__info_text">Тем не менее, в 1944 году поселок по названию завода переименовывается в Мосрентген. Вместо эвакуированного оборудования из поверженной Германии привозится немецкое оборудование, его наладкой три года занимался немецкий инженер, который три года проживал тут же, в поселке. На протяжении полувека завод «Мосрентген» является градообразующим предприятием поселка, т.е. несет бремя по социальной, коммунальной, культурной и другим сферам жизнедеятельности поселка Мосрентген. В 90-годы завод, как и большинство отечественных промышленных предприятий, оказался в кризисе. Однако с середины текущего десятилетия завод возобновляет выпуск рентгеновской техники и выигрывает конкурс в рамках национального проекта «Здоровье» на выпуск медицинской техник. В мае 2006 года завод посещает первый вице-премьер Российского правительства Д.А.Медведев, где знакомится с выпускаемыми образцами рентгеновских аппаратов.</p>
+                    </div>
+                    <div className="about-main-content__image">
+                        <img className="about-main-content__image_img" src={img10} alt=""/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  );
 }
 
 export default GenreItem

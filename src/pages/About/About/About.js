@@ -8,7 +8,7 @@ function About() {
      <div className="about wrapper">
         <div className="about__body">
            <PagePreview
-               title={"МБУ «Жилищник Мосрентген»"}
+               title={"МБУ ЖИЛИЩНИК МОСРЕНТГЕН"}
                backgroundImage={require("../../../assets/images/backgroundImages/MSG.jpg")}
                isNested={true}
            />
