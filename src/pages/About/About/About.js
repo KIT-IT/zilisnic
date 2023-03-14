@@ -6,6 +6,7 @@ import AboutContent from "./AboutContent/AboutContent";
 function About() {
     return (
      <div className="about wrapper">
+        
         <div className="about__body">
            <PagePreview
                title={"МБУ ЖИЛИЩНИК МОСРЕНТГЕН"}
