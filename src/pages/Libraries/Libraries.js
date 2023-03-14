@@ -1,10 +1,4 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
-import {libraryData} from '../../configurations/librariesPageConfigurations/librariesCardsConfig'
-import Accordion from '../../components/Accordion/Accordion'
-import { libRulesData } from '../../configurations/librariesPageConfigurations/librariesVisitingRulesConfig'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShare  } from  '@fortawesome/free-solid-svg-icons'
 import PagePreview from "../../components/PagePrewievImageNavigation/PagePreview";
 
 function Libraries() {

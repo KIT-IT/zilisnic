@@ -19,8 +19,6 @@ function Clubs() {
         )
     })
 
-    const href = require('../../assets/docs/clubs-shedule.pdf')
-
     return (
         <div className="clubs wrapper">
             <PagePreview

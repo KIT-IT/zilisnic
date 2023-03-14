@@ -19,7 +19,7 @@ function MobileNavigation({ list }) {
                         </button>
                     </div>
                     <div className="mobile-navigation__phone-link">
-                        <a className="header-mobile-version-menu__links_phone-number" href="tel:+74958508053">+7 (495) 850-80-53</a>
+                        <a className="header-mobile-version-menu__links_phone-number" href="tel:+74954241155">+7 (495) 424-11-55</a>
                     </div>
                 </div>
             </div>

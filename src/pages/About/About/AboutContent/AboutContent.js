@@ -1,11 +1,6 @@
 import React from 'react'
 
 function AboutContent() {
-    const defaultState = {
-        center: [55.620750, 37.472685],
-        zoom: 16,
-      };
-
     return (
         <div className="about-content">
             <div className="about-content__body _container">

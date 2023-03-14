@@ -20,7 +20,7 @@ export const navList  = [
     {
         type: 'events',
         id: 3,
-        to: '/events/1',
+        to: '/events/',
         text: 'Новости',
         isIcon: false,
         isDrop: false,

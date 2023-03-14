@@ -48,7 +48,7 @@ useEffect(() => {
             ? null
             : <div className="header-mobile-version-menu__links">
                 <div className="header-mobile-version-menu__links_phone">
-                  <a className="header-mobile-version-menu__links_phone-number" href="tel:+74958508053">+7 (495) 850-80-53</a>
+                  <a className="header-mobile-version-menu__links_phone-number" href="tel:+74954241155">+7 (495) 424-11-55</a>
                 </div>
                 <div className="header-mobile-version-menu__links_form">
                   <button className="header-mobile-version-menu__links_form-button button element-with-changing-styles" onClick={handleFormOpen}>
