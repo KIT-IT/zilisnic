@@ -30,7 +30,7 @@ function App() {
             <Route path="/contacts/" component={Contacts} />
             <Route path="/libraries/" exact component={Libraries} />
             <Route path="/search/" component={SearchingResult} />
-            <Route path="/events/"><Events month="2024 год"/></Route>
+            <Route path="/events/"><Events month="2023 год"/></Route>
             <Route path="/clubs/" exact component={Clubs}/>
             <Route path="*" component={NoMatch} />
         </Switch>
